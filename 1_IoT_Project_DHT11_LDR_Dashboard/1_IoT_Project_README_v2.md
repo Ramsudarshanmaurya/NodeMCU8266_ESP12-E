@@ -101,9 +101,9 @@ Gauges + Charts
 
 | | | |
 |:---:|:---:|:---:|
-| ![image1](Images/image1.jpeg) | ![image2](Images/image2.jpeg) | ![image3](Images/image3.jpeg) |
+| ![image1](Images/image1.jpg) | ![image2](Images/image2.png) | ![image3](Images/image3.png) |
 | Circuit Diagram | Dashboard View | Node-RED Flow |
-| ![image4](Images/image4.jpeg) | ![image5](Images/image5.jpeg) | ![image6](Images/image6.jpeg) |
+| ![image4](Images/image4.png) | ![image5](Images/image5.png) | ![image6](Images/image6.png) |
 | Serial Monitor | Gauge View | Chart View |
 
 ---
