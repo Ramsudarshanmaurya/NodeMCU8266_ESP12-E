@@ -94,13 +94,14 @@ Real Hardware | MQTT | Node-RED Dashboard | Live Monitoring
 
 | | | |
 |:---:|:---:|:---:|
-| ![Circuit](2_IoT_Project_DHT11_LDR_MQ135_Ultrasonic/images/image1.jpeg) | ![Dashboard](2_IoT_Project_DHT11_LDR_MQ135_Ultrasonic/images/image2.png) | ![Flow](2_IoT_Project_DHT11_LDR_MQ135_Ultrasonic/images/image3.png) |
+| ![Circuit](2_IoT_Project_DHT11_LDR_MQ135_Ultrasonic_OLED/Images/image1.jpeg) | ![Dashboard](2_IoT_Project_DHT11_LDR_MQ135_Ultrasonic_OLED/Images/image2.png) | ![Flow](2_IoT_Project_DHT11_LDR_MQ135_Ultrasonic_OLED/Images/image3.png) |
 | Circuit Diagram | Dashboard View | Node-RED Flow |
-| ![Serial](2_IoT_Project_DHT11_LDR_MQ135_Ultrasonic/images/image4.png) | ![OLED](2_IoT_Project_DHT11_LDR_MQ135_Ultrasonic/images/image5.png) | ![Chart](2_IoT_Project_DHT11_LDR_MQ135_Ultrasonic/images/image6.png) |
+| ![Serial](2_IoT_Project_DHT11_LDR_MQ135_Ultrasonic_OLED/Images/image4.png) | ![OLED](2_IoT_Project_DHT11_LDR_MQ135_Ultrasonic_OLED/Images/image5.png) | ![Chart](2_IoT_Project_DHT11_LDR_MQ135_Ultrasonic_OLED/Images/image6.png) |
 | Serial Monitor | OLED Display | Chart View |
 
 📄 [View Full Project →](2_IoT_Project_DHT11_LDR_MQ135_Ultrasonic_OLED/README.md)
 
+---
 ---
 
 <div align="center">
