@@ -1,0 +1,976 @@
+[
+    {
+        "id": "d435845564726c73",
+        "type": "tab",
+        "label": "IoT Project 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "733cad1b67f7dc96",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2bb24be98a66a77d",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "f6fe648bbfd295d5",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "e1801d594e0ba6bb",
+        "type": "ui-page",
+        "name": "Page 1",
+        "ui": "2bb24be98a66a77d",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "f6fe648bbfd295d5",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "ff4b717ac1c1670d",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "e1801d594e0ba6bb",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "499704800e27c5c5",
+        "type": "ui_tab",
+        "name": "IoT Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2309a80ad2d41890",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "9010fa4fae48fcad",
+        "type": "ui_group",
+        "name": "Sensors",
+        "tab": "499704800e27c5c5",
+        "order": 1,
+        "disp": true,
+        "width": "21",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "5d399efbb26c912b",
+        "type": "ui_tab",
+        "name": "Chart",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "65bce5321df03b5b",
+        "type": "ui_group",
+        "name": "chart",
+        "tab": "5d399efbb26c912b",
+        "order": 1,
+        "disp": true,
+        "width": "21",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "mqtt_broker",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "ui_tab_sensors",
+        "type": "ui_tab",
+        "name": "Sensors",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ui_tab_charts",
+        "type": "ui_tab",
+        "name": "Charts",
+        "icon": "show_chart",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ui_tab_control",
+        "type": "ui_tab",
+        "name": "Control",
+        "icon": "settings_remote",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ui_group_sensors",
+        "type": "ui_group",
+        "name": "📊 Sensors",
+        "tab": "ui_tab_sensors",
+        "order": 1,
+        "disp": true,
+        "width": "21",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "ui_group_charts",
+        "type": "ui_group",
+        "name": "📈 Charts",
+        "tab": "ui_tab_charts",
+        "order": 1,
+        "disp": true,
+        "width": "21",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ui_group_control",
+        "type": "ui_group",
+        "name": "🎛️ Control",
+        "tab": "ui_tab_control",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d098d0ea52a70ab0",
+        "type": "ui_group",
+        "name": "🌡️ Temperature",
+        "tab": "ui_tab_charts",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4751e2d6c22ca2b9",
+        "type": "ui_group",
+        "name": "💧 Humidity",
+        "tab": "ui_tab_charts",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "75a591417ef283a3",
+        "type": "ui_group",
+        "name": "💡 Light (LDR)",
+        "tab": "ui_tab_charts",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "3cfa43da7c32aa4e",
+        "type": "ui_group",
+        "name": "💨 Air Quality (MQ135)",
+        "tab": "ui_tab_charts",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "259fa7dd7a894a89",
+        "type": "ui_group",
+        "name": "📏 Distance",
+        "tab": "ui_tab_charts",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "3d6dd4c9f3865714",
+        "type": "ui_group",
+        "name": "LIGHT",
+        "tab": "ui_tab_sensors",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ee8e4cd5b1c22241",
+        "type": "ui_group",
+        "name": "🌡️ Temperature",
+        "tab": "ui_tab_charts",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "606a3f1423d09992",
+        "type": "ui_group",
+        "name": "💧 Humidity",
+        "tab": "ui_tab_charts",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "e04e9518ea022a79",
+        "type": "ui_group",
+        "name": "💡 Light (LDR)",
+        "tab": "ui_tab_charts",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "51d76ebdf9ab1071",
+        "type": "ui_group",
+        "name": "💨 Air Quality (MQ135)",
+        "tab": "ui_tab_charts",
+        "order": 4,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "1ccf78a0efc72ff1",
+        "type": "ui_group",
+        "name": "📏 Distance",
+        "tab": "ui_tab_charts",
+        "order": 5,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "a3a7e2f65566445b",
+        "type": "mqtt in",
+        "z": "d435845564726c73",
+        "name": "Temperature",
+        "topic": "tempNode",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker",
+        "inputs": 0,
+        "x": 120,
+        "y": 60,
+        "wires": [
+            [
+                "01123a9781ccabb2",
+                "e57a455ee284a29a"
+            ]
+        ]
+    },
+    {
+        "id": "0f4c0d9d795d6e03",
+        "type": "mqtt in",
+        "z": "d435845564726c73",
+        "name": "Humidity",
+        "topic": "humiNode",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker",
+        "inputs": 0,
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "bc13debfd2217241",
+                "69715e9b98ebbdd1"
+            ]
+        ]
+    },
+    {
+        "id": "c08ab6e3776e74cd",
+        "type": "mqtt in",
+        "z": "d435845564726c73",
+        "name": "LDR",
+        "topic": "ldrNode",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "5316111029d8cf30",
+                "28cce06720938fc3"
+            ]
+        ]
+    },
+    {
+        "id": "5d48ab37daf2b99d",
+        "type": "mqtt in",
+        "z": "d435845564726c73",
+        "name": "MQ135",
+        "topic": "mq135Node",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "3f5153b2009fdd9a",
+                "bb501b7cfdded649"
+            ]
+        ]
+    },
+    {
+        "id": "9d0fb39e122566a0",
+        "type": "mqtt in",
+        "z": "d435845564726c73",
+        "name": "Distance",
+        "topic": "distanceNode",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker",
+        "inputs": 0,
+        "x": 120,
+        "y": 380,
+        "wires": [
+            [
+                "ab914cf887bcb15b",
+                "86ebfcd74aebfad2"
+            ]
+        ]
+    },
+    {
+        "id": "b9e321f20dae8f26",
+        "type": "mqtt in",
+        "z": "d435845564726c73",
+        "name": "LED1 Status",
+        "topic": "led1StatusNode",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 120,
+        "y": 460,
+        "wires": [
+            [
+                "9d90b761acb1c76e"
+            ]
+        ]
+    },
+    {
+        "id": "01123a9781ccabb2",
+        "type": "ui_gauge",
+        "z": "d435845564726c73",
+        "name": "Temperature",
+        "group": "ui_group_sensors",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "🌡️ Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 50,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "25",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 420,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "bc13debfd2217241",
+        "type": "ui_gauge",
+        "z": "d435845564726c73",
+        "name": "Humidity",
+        "group": "ui_group_sensors",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "💧 Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 100,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "40",
+        "seg2": "70",
+        "diff": false,
+        "className": "",
+        "x": 420,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "3f5153b2009fdd9a",
+        "type": "ui_gauge",
+        "z": "d435845564726c73",
+        "name": "MQ135",
+        "group": "ui_group_sensors",
+        "order": 4,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "💨 Air Quality",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 1024,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "300",
+        "seg2": "600",
+        "diff": false,
+        "className": "",
+        "x": 420,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "ab914cf887bcb15b",
+        "type": "ui_gauge",
+        "z": "d435845564726c73",
+        "name": "Distance",
+        "group": "ui_group_sensors",
+        "order": 5,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "📏 Distance",
+        "label": "cm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 200,
+        "colors": [
+            "#ca3838",
+            "#e6e600",
+            "#00b500"
+        ],
+        "seg1": "15",
+        "seg2": "50",
+        "x": 420,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "9d90b761acb1c76e",
+        "type": "ui_text",
+        "z": "d435845564726c73",
+        "group": "ui_group_sensors",
+        "order": 6,
+        "width": "6",
+        "height": "1",
+        "name": "LED1",
+        "label": "🔴 LED1",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 420,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "e57a455ee284a29a",
+        "type": "ui_chart",
+        "z": "d435845564726c73",
+        "name": "Temp Chart",
+        "group": "d098d0ea52a70ab0",
+        "order": 1,
+        "width": "6",
+        "height": "5",
+        "label": "🌡️ Temperature (°C)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 570,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "69715e9b98ebbdd1",
+        "type": "ui_chart",
+        "z": "d435845564726c73",
+        "name": "Humi Chart",
+        "group": "4751e2d6c22ca2b9",
+        "order": 1,
+        "width": "6",
+        "height": "5",
+        "label": "💧 Humidity (%)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#2ca02c"
+        ],
+        "outputs": 1,
+        "x": 570,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5316111029d8cf30",
+        "type": "ui_chart",
+        "z": "d435845564726c73",
+        "name": "LDR Chart",
+        "group": "75a591417ef283a3",
+        "order": 1,
+        "width": "6",
+        "height": "5",
+        "label": "💡 Light LDR (lux)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1024",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff7f0e",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 570,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb501b7cfdded649",
+        "type": "ui_chart",
+        "z": "d435845564726c73",
+        "name": "MQ135 Chart",
+        "group": "3cfa43da7c32aa4e",
+        "order": 1,
+        "width": "6",
+        "height": "5",
+        "label": "💨 Air Quality MQ135 (ppm)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1024",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#d62728"
+        ],
+        "outputs": 1,
+        "x": 580,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "86ebfcd74aebfad2",
+        "type": "ui_chart",
+        "z": "d435845564726c73",
+        "name": "Distance Chart",
+        "group": "259fa7dd7a894a89",
+        "order": 1,
+        "width": "6",
+        "height": "5",
+        "label": "📏 Distance (cm)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "200",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#9467bd"
+        ],
+        "outputs": 1,
+        "x": 580,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2b9b5e09aa2bdfbb",
+        "type": "ui_switch",
+        "z": "d435845564726c73",
+        "name": "LED2 Control",
+        "label": "💡 LED2 Control",
+        "tooltip": "Turn LED2 ON or OFF",
+        "group": "ui_group_control",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 120,
+        "y": 580,
+        "wires": [
+            [
+                "bf2d5e91f61d1daf"
+            ]
+        ]
+    },
+    {
+        "id": "bf2d5e91f61d1daf",
+        "type": "mqtt out",
+        "z": "d435845564726c73",
+        "name": "LED2 MQTT Out",
+        "topic": "led2ControlNode",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "mqtt_broker",
+        "x": 450,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "28cce06720938fc3",
+        "type": "ui_gauge",
+        "z": "d435845564726c73",
+        "name": "LDR",
+        "group": "ui_group_sensors",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "LDR",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1024",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "40",
+        "seg2": "70",
+        "diff": false,
+        "className": "",
+        "x": 410,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "085a846cc393d59b",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.30.2",
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
